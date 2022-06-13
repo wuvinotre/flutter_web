@@ -1,5 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_web/src/components/toogle_switch.dart';
+import 'package:flutter_web/src/screens/login_page.dart';
 import 'package:flutter_web/src/screens/service_page.dart';
 import 'package:flutter_web/src/screens/home_page.dart';
 
@@ -17,6 +18,7 @@ class _RoutesState extends State<Routes> {
         content: NavigationBody(index: index, children: const [
           Home(),
           Service(),
+          Login(),
         ]),
         appBar: const NavigationAppBar(),
         pane: NavigationPane(
@@ -36,8 +38,11 @@ class _RoutesState extends State<Routes> {
                   icon: const Icon(FluentIcons.home),
                   title: const Text("Home")),
               PaneItem(
-                  icon: const Icon(FluentIcons.location_circle),
-                  title: const Text("Client"))
+                  icon: const Icon(FluentIcons.add_work),
+                  title: const Text("Serviços")),
+              PaneItem(
+                  icon: const Icon(FluentIcons.follow_user),
+                  title: const Text("Login")),
             ]));
   }
 }

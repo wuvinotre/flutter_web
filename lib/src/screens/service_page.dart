@@ -18,33 +18,26 @@ class _ServiceState extends State<Service> {
   ];
   @override
   Widget build(BuildContext context) {
-    return ScaffoldPage(
+    return ScaffoldPage.scrollable(
         header: const PageHeader(
             title: Text(
           "Serviços em alta na plataforma",
           style: TextStyle(fontSize: 40),
         )),
-        content: SingleChildScrollView(
-          child: Container(
-            margin: const EdgeInsets.all(25),
-            child: Column(
-                children: services.map((e) {
-              return ListTile(
-                title: Row(
-                  children: [
-                    const Icon(
-                      FluentIcons.increase_indent_arrow,
-                      color: Colors.white,
-                    ),
-                    Text(
-                      e,
-                      style: const TextStyle(fontSize: 20),
-                    )
-                  ],
-                ),
-              );
-            }).toList()),
-          ),
-        ));
+        children: [
+          Container(
+              margin: const EdgeInsets.all(25),
+              child: Column(
+                  children: services.map((e) {
+                return ListTile(
+                    title: Row(children: [
+                  const Icon(
+                    FluentIcons.increase_indent_arrow,
+                    color: Colors.white,
+                  ),
+                  Text(e, style: const TextStyle(fontSize: 20))
+                ]));
+              }).toList()))
+        ]);
   }
 }
