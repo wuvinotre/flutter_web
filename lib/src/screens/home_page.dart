@@ -6,10 +6,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldPage.scrollable(
-        header: const PageHeader(
-            title: Text(
-          "FazTudo",
-          style: TextStyle(fontSize: 40),
+        header: PageHeader(
+            title: Image.asset(
+          'Logo.png',
         )),
         children: [
           Container(
@@ -28,7 +27,7 @@ class Home extends StatelessWidget {
                     onPressed: () {},
                     child: const Text(
                       'Cadastre-se',
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 30),
                     ),
                   ),
                   const SizedBox(

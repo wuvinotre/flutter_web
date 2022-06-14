@@ -71,7 +71,7 @@ class _LoginState extends State<Login> {
                     child: Button(
                       child: const Text(
                         'Entrar',
-                        style: TextStyle(fontSize: 15, color: Colors.white),
+                        style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -91,7 +91,7 @@ class _LoginState extends State<Login> {
                     TextButton(
                       child: const Text(
                         'Esqueceu a senha?',
-                        style: TextStyle(fontSize: 15, color: Colors.white),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
                       onPressed: () {},
                     ),
@@ -104,7 +104,7 @@ class _LoginState extends State<Login> {
                         },
                         child: const Text(
                           'Cadastra-te aqui!',
-                          style: TextStyle(fontSize: 15, color: Colors.white),
+                          style: TextStyle(fontSize: 16, color: Colors.white),
                         ))
                   ],
                 ),

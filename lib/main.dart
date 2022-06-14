@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.dark,
-          accentColor: Colors.purple,
+          accentColor: Colors.teal,
           iconTheme: const IconThemeData(size: 24)),
       home: const Routes(),
     );

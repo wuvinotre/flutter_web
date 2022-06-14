@@ -105,9 +105,11 @@ class _RegisterState extends State<Register> {
                       child: Button(
                         child: const Text(
                           'Entrar',
-                          style: TextStyle(fontSize: 15, color: Colors.white),
+                          style: TextStyle(fontSize: 20, color: Colors.white),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                       ),
                     ),
                   ),
@@ -116,16 +118,25 @@ class _RegisterState extends State<Register> {
                   ),
                   Row(
                     children: [
-                      const Text('Sexo:'),
+                      const Text(
+                        'Sexo:',
+                        style: TextStyle(fontSize: 16),
+                      ),
                       const SizedBox(width: 50),
                       Checkbox(
-                        content: const Text('Masculino'),
+                        content: const Text(
+                          'Masculino',
+                          style: TextStyle(fontSize: 16),
+                        ),
                         checked: _checked,
                         onChanged: (value) => setState(() => _checked = value!),
                       ),
                       const SizedBox(width: 20),
                       Checkbox(
-                        content: const Text('Feminino'),
+                        content: const Text(
+                          'Feminino',
+                          style: TextStyle(fontSize: 16),
+                        ),
                         checked: _checked,
                         onChanged: (value) => setState(() => _checked = value!),
                       )
